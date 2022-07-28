@@ -3,6 +3,8 @@ Spotify widget built in React 18 for a technical test with Mendix
 
 ## Set up instructions
 
+The below instruction assume node has been installed on the machine. If this is not the case please head to <https://nodejs.org/en/download/> to download it.
+
 1) Take a close of the repo by navigating to your desired local directory and run the command 'git clone https://... {get link from green 'Code' button above}'
 2) Once cloned, run the 'npm install' command to download the required dependencies.
 3) When this is complete you need to run the application using the command 'npm run start'. This will spin up a server on <http://localhost:3000>
