@@ -8,7 +8,7 @@ The below instruction assume node has been installed on the machine. If this is 
 1) Take a close of the repo by navigating to your desired local directory and run the command 'git clone https://... {get link from green 'Code' button above}'
 2) Once cloned, run the 'npm install' command to download the required dependencies.
 3) When this is complete you need to run the application using the command 'npm run start'. This will spin up a server on <http://localhost:3000>
-4) Navigation to the URL above and you're all set.
+4) Navigate to the URL above and you're all set.
 
 ### Implementation ###
 The application is built using React 18 and Visual Studio Code IDE.
