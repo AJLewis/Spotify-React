@@ -1,0 +1,14 @@
+.spotify-widget {
+  width:100%;
+  height: 541px;
+  border-radius: 25px;
+  overflow-x: hidden;
+  background-color: #e4e4e4;
+  background-clip: content-box; 
+  padding: 1px;
+
+  &.dark {
+    background-color: #313131;
+    border-radius: 0;
+  }
+}

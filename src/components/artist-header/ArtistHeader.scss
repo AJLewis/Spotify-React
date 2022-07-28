@@ -1,0 +1,93 @@
+@import '../../variables';
+
+.artist-header-container {
+  display: flex;
+  background-color: $element_bg_primary;
+  min-height: 144px; 
+  position: relative;
+  padding: 25px 20px 15px 20px;
+  box-sizing: border-box;
+
+  p, h2 {
+    color: $force_white_font ; 
+    text-shadow: $text_shadow;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+
+  .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index:800;
+  }
+
+  .col {
+      z-index:900;
+      display: flex;
+      flex-direction: column;
+      width:100%;
+
+      .bottom-container {
+        display: flex;
+        flex-direction: row;
+        height:100%;
+
+        .popularity {
+          align-self: flex-end;
+          .relative {
+            position: relative;
+            p {
+              position: absolute;
+              top: -4px;
+              font-size: 0.60em;
+              color:$font_primary;
+              text-shadow: none;
+              font-weight:700;
+              left:8px;
+            } 
+          }
+        }
+        .followers {
+          align-self: flex-end;
+          margin: 0 0 7px 6px;
+        }
+        .spotify-link {
+          align-items: flex-end;
+          display: flex;
+          flex-grow:1;
+          justify-content: end;
+          &:hover {
+            cursor: pointer;
+          }
+          .button {
+            margin: 0 0 2px 0;
+            display: flex;
+            align-self: flex-end;
+            align-items: center;
+            border-radius: 50px;
+            padding: 5px 10px 5px 6px;
+            border: 1px solid #fff;
+            background-color: $spotify_green;
+            img {
+              margin-right:3px;
+            }
+            p {
+              font-size:0.6em;
+              text-shadow: none;
+              font-weight: 700;
+              text-transform: uppercase;
+              margin: 0 0 1px 0;
+            }
+          }
+        }
+      }
+    }
+}

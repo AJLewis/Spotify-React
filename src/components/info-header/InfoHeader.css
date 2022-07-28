@@ -1,0 +1,60 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  background: #e9e9e9;
+  min-height: 144px; }
+  .header-container.empty {
+    background-color: #1DB954; }
+  .header-container .empty-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header-container .empty-header .spotify-logo {
+      filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(160deg) brightness(1000%) contrast(100%); }
+    .header-container .empty-header div img {
+      padding: 10px;
+      max-width: 200px; }
+  .header-container .image-container {
+    padding: 20px 25px;
+    position: relative; }
+    .header-container .image-container img {
+      width: 100px;
+      height: 100px; }
+    .header-container .image-container .track-count {
+      position: absolute;
+      left: 50%;
+      bottom: 37px;
+      margin: 0 auto; }
+      .header-container .image-container .track-count .box {
+        position: relative;
+        border-radius: 4px;
+        left: -50%;
+        background: rgba(255, 255, 255, 0.8);
+        color: #313131;
+        font-size: 0.7em;
+        font-weight: 700;
+        padding: 4px; }
+  .header-container .playlist-info {
+    padding: 0 15px 0 0; }
+    .header-container .playlist-info h4 {
+      color: #313131;
+      margin-bottom: 8px; }
+    .header-container .playlist-info p {
+      color: #313131;
+      font-size: 0.75em; }
+      .header-container .playlist-info p:hover {
+        cursor: pointer; }
+
+.header-container.dark {
+  background: #313131; }
+  .header-container.dark .no-playlist-selected {
+    color: #fff; }
+  .header-container.dark .image-container img .track-count .box {
+    background: #313131;
+    color: #fff; }
+  .header-container.dark .playlist-info h4 {
+    color: #fff; }
+  .header-container.dark .playlist-info p {
+    color: #fff; }

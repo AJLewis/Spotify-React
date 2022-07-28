@@ -1,0 +1,96 @@
+@import '../../variables';
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background: $element_bg_primary;
+  min-height: 144px;
+
+  &.empty {
+    background-color: $empty_header_bg_color;
+  }
+
+  .empty-header {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .spotify-logo {
+      filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(160deg) brightness(1000%) contrast(100%)
+    }
+    div {
+      img {
+        padding: 10px;
+        max-width:200px
+      }
+    }
+  }
+
+
+  .image-container {
+    padding: 20px 25px;
+    position: relative;
+    img {
+      width:100px;
+      height:100px
+    }
+    .track-count {
+      position: absolute;
+      left:50%;
+      bottom: 37px;
+      margin: 0 auto;
+      .box {
+        position: relative; 
+        border-radius: 4px;
+        left: -50%; 
+        background: rgba(255,255,255,0.8);
+        color:$font_primary;
+        font-size: 0.7em;
+        font-weight: 700;
+        padding: 4px;
+      }
+    }
+  }
+  .playlist-info {
+    padding: 0 15px 0 0;
+    h4 {
+      color: $font_primary;
+      margin-bottom: 8px;
+    }
+    p {
+      color: $font_primary;
+      font-size: 0.75em;
+      
+      &:hover {
+        cursor: pointer;
+    }
+    }
+  }
+}
+
+// dark 
+.header-container.dark {
+  background: $dark_mode_element_bg_primary;
+  .no-playlist-selected {
+    color: $dark_mode_font_primary;
+  }
+  .image-container {
+    img {
+      .track-count {
+        .box {
+          background:$dark_mode_element_bg_primary;
+          color:$dark_mode_font_primary;
+        }
+      }
+    }
+  }
+  .playlist-info {
+    h4 {
+      color: $dark_mode_font_primary;
+    }
+    p {
+      color: $dark_mode_font_primary;
+    }
+  }
+}

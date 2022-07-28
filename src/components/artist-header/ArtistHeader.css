@@ -1,0 +1,70 @@
+.artist-header-container {
+  display: flex;
+  background-color: #e9e9e9;
+  min-height: 144px;
+  position: relative;
+  padding: 25px 20px 15px 20px;
+  box-sizing: border-box; }
+  .artist-header-container p, .artist-header-container h2 {
+    color: #fff;
+    text-shadow: 1px 1px #000; }
+  .artist-header-container h2 {
+    text-transform: uppercase;
+    font-size: 1.2em; }
+  .artist-header-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 800; }
+  .artist-header-container .col {
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .artist-header-container .col .bottom-container {
+      display: flex;
+      flex-direction: row;
+      height: 100%; }
+      .artist-header-container .col .bottom-container .popularity {
+        align-self: flex-end; }
+        .artist-header-container .col .bottom-container .popularity .relative {
+          position: relative; }
+          .artist-header-container .col .bottom-container .popularity .relative p {
+            position: absolute;
+            top: -4px;
+            font-size: 0.60em;
+            color: #313131;
+            text-shadow: none;
+            font-weight: 700;
+            left: 8px; }
+      .artist-header-container .col .bottom-container .followers {
+        align-self: flex-end;
+        margin: 0 0 7px 6px; }
+      .artist-header-container .col .bottom-container .spotify-link {
+        align-items: flex-end;
+        display: flex;
+        flex-grow: 1;
+        justify-content: end; }
+        .artist-header-container .col .bottom-container .spotify-link:hover {
+          cursor: pointer; }
+        .artist-header-container .col .bottom-container .spotify-link .button {
+          margin: 0 0 2px 0;
+          display: flex;
+          align-self: flex-end;
+          align-items: center;
+          border-radius: 50px;
+          padding: 5px 10px 5px 6px;
+          border: 1px solid #fff;
+          background-color: #1DB954; }
+          .artist-header-container .col .bottom-container .spotify-link .button img {
+            margin-right: 3px; }
+          .artist-header-container .col .bottom-container .spotify-link .button p {
+            font-size: 0.6em;
+            text-shadow: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0 0 1px 0; }

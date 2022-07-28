@@ -1,0 +1,9 @@
+@import '../../variables';
+
+.playlist-container {
+  position: relative;
+  
+  &.dark {
+    background: $dark_mode_element_bg_primary;
+  }
+}

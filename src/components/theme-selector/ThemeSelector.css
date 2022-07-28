@@ -1,0 +1,13 @@
+.theme-selector {
+  justify-content: flex-end;
+  justify-items: flex-end;
+  align-items: center;
+  max-width: 1200px;
+  padding: 25px; }
+  .theme-selector .mode-toggle {
+    margin-right: auto;
+    text-align: right; }
+    .theme-selector .mode-toggle img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer; }

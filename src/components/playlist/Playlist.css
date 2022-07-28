@@ -1,0 +1,4 @@
+.playlist-container {
+  position: relative; }
+  .playlist-container.dark {
+    background: #313131; }
